@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Script examples</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+</head>
+<body>
+
+    <div>
+        Pat Token: <input name="amp_pat_token" value="" type="password"></div>
+        </br>
+        <button id="patbtn">LIST HUBS</button>
+    </div>
+    <div id="hubsholder">
+        <div id="hubs"></div>
+        </br>
+        <button id="proceed">PROCEED</button>
+    </div>
+    <div id="messageholder">
+        <div id="audiences"></div>
+        <div id="voices"></div>
+        <div id="tones"></div>
+        </br>
+        <div>
+            <h3>Product Name: </h3>
+            <pre>Optional: Name of the product</pre>
+            <input name="product_name">
+        </div>
+        <hr>
+        <div>
+            <h3>Product details:</h3>
+            <pre>Optional: Any known details of the product</pre>
+            <input name="product_details">
+        </div>
+        <hr>
+        <div>
+            <h3>Images: </h3>
+            <pre>This is a comma seperated list of Amplience Image URLs</pre>
+            <div class="example">
+                Example:
+                <pre>https://cdn.media.amplience.net/i/lmg/7008425014Grey-7008425014GreySS24CP090524_01-2100,https://cdn.media.amplience.net/i/lmg/7008425014Grey-7008425014GreySS24CP090524_02-2100,https://cdn.media.amplience.net/i/lmg/7008425014Grey-7008425014GreySS24CP090524_03-2100,https://cdn.media.amplience.net/i/lmg/7008425014Grey-7008425014GreySS24CP090524_04-2100,https://cdn.media.amplience.net/i/lmg/7008425014Grey-7008425014GreySS24CP090524_05-2100,https://cdn.media.amplience.net/i/lmg/7008425014Grey-7008425014GreySS24CP090524_06-2100</pre>
+            </div>
+            <input name="product_images">
+            
+        </div>
+        <hr>
+        <div>
+            <h3>Keywords: </h3>
+            <pre>Optional: This is a comma seperated list of keywords for SEO</pre>
+            <input name="product_keywords">
+        </div>
+        <hr>
+        <div>
+            <h3>Additional:</h3>
+            <pre>This is additional information. Commonly used to write in regional language</pre>
+            <div class="example">
+                Example:
+                <pre>Write in arabic using localization for KSA customers</pre>
+            </div>
+            <input name="product_additional">
+            
+            
+        </div>
+        <hr>
+        </br>
+        <button id="submit">GENERATE</button>
+        </br>
+    </div>  
+    <div id="result"></div>
+    <script src='main.js' async></script>
+</body>
+</html>
