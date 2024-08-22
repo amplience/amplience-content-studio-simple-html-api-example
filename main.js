@@ -243,6 +243,7 @@ const LIST_SETTINGS = function() {
     }
 }
 
+// Action Button for this function
 document.getElementById("proceed").onclick=async function(){
     await getSettings()
 }
@@ -350,6 +351,8 @@ Uses the inputed and selected information to generate
 */
 // Intantiate DOM elements and actions
 const descriptionBox = document.getElementById("result");
+
+// Action Button for this function
 document.getElementById("submit").onclick = async function(){
     transformInputData()
     var respurl = await submitGeneration()
